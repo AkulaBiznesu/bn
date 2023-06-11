@@ -1,5 +1,5 @@
 # Binance Data Collection and Visualization
-
+The project is a web application built using Flask and Plotly. It allows users to fetch and visualize candlestick data from the Binance API for various symbols and time intervals. The application collects data from the API, stores it in a SQLite database, and provides a user interface to view the data in the form of candlestick charts and a pie chart of market caps. Users can select symbols and intervals through a dropdown menu and fetch the corresponding data. The charts are dynamically rendered using Plotly, providing an interactive and visually appealing representation of the data.
 ## Task 1: Collecting Data from Binance API
 
 - Install the required dependencies by running `pip3 install -r requirements.txt`.
