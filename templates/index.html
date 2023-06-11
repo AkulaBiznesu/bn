@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Binance Data Visualization</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <form method="POST" action="/">
+        <label for="symbol">Symbol:</label>
+        <select id="symbol" name="symbol" required>
+            {% for symbol in symbol_list %}
+            <option value="{{ symbol }}">{{ symbol }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="interval">Interval:</label>
+        <select id="interval" name="interval" required>
+            {% for inter in interval_list %}
+            <option value="{{ inter }}">{{ inter }}</option>>
+            {% endfor %}
+        </select>
+
+        <button type="submit">Fetch Data</button>
+    </form>
+
+    <div id="chart"></div>
+    <script>
+
+        var chartHTML = '{{ chart_html|safe }}'
+
+        var chartHTML_pie = '{{ chart_html_pie | safe }}'
+
+    </script>
+</body>
+</html>
