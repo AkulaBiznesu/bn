@@ -87,4 +87,6 @@ def display_data():
     return render_template('index.html', symbol_list=symbol_list, interval_list=interval_list)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # app.run()
+    app.run(debug=True ,host='0.0.0.0')
+
